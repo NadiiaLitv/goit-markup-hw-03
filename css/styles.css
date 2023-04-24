@@ -29,7 +29,9 @@ body {
   background-color: var(--color-white);
 }
 .container {
-  width: 1158px;
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,7 +54,29 @@ body {
 }
 
 /* HEADER */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
 .logo-link {
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -64,6 +88,9 @@ body {
 }
 .logo-header {
   color: var(--color-grey);
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 .contacts {
   font-style: normal;
@@ -92,12 +119,22 @@ body {
 .contacts-link:focus {
   color: var(--color-ocean);
 }
+.contacts {
+  margin-left: auto;
+}
+.mail {
+  margin-right: 40px;
+}
 
 /* HERO */
+.hero-container {
+  text-align: center;
+}
 .section-hero {
   background: var(--color-grey);
 }
 .hero-title {
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -106,6 +143,13 @@ body {
   color: var(--color-white);
 }
 .hero-btn {
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 10px;
+  min-width: 169px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -118,17 +162,6 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--color-ocean);
-}
-
-.works-title,
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--color-navy-blue);
 }
 
 /* COMPONENTS *FEATURES*, *ABOUT*,*PORTFOLIO**/
@@ -147,12 +180,21 @@ body {
   color: var(--color-slate);
 }
 
+/* Features */
+.features-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-menu-item {
+  width: 300px;
+}
 .about-section {
   background: var(--color-cloud);
 }
 .menu-team-item {
   background-color: var(--color-white);
 }
+
 /* FOOTER */
 .footer-section {
   background: var(--color-grey);
