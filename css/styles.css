@@ -240,7 +240,6 @@ body {
 .works-title,
 .team-title {
   margin-bottom: 72px;
-  padding-top: 120px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -262,11 +261,27 @@ body {
 }
 .menu-team-item {
   width: calc((100% - 72px) / 4);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .menu-team-item:not(:last-child) {
   margin-right: 24px;
 }
-
+.menu-team-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.menu-team-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.menu-team-text {
+  text-align: center;
+}
 .about-section {
   background: var(--color-cloud);
 }
@@ -279,6 +294,8 @@ body {
 /*  */
 
 .footer-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: var(--color-grey);
 }
 .logo-footer {
@@ -291,15 +308,15 @@ body {
   color: var(--color-cloud);
 }
 .footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
   margin-left: 156px;
 }
 .footer-section-text {
   width: 264px;
-  margin-top: 16px;
 }
-
+.logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 /*  */
 /* PORTFOLIO */
 /*  */
